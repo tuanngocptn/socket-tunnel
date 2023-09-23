@@ -93,9 +93,7 @@ module.exports = (options) => {
       // 2. my.super.example.com = my.super
       // 3. If we are running the tunnel server on a subdomain, we must strip it from the provided hostname
       if (options.subdomain) {
-        // https://github.com/ericbarch/socket-tunnel/issues/11
-        // subdomain = subdomain.replace(`.${options.subdomain}`, '');
-        subdomain = options.subdomain;
+        subdomain = subdomain.replace(`.${options.subdomain}`, '');
       }
 
       let subdomainSocket = socketsBySubdomain[subdomain];
@@ -156,7 +154,7 @@ module.exports = (options) => {
       }
 
       // domains are case insensitive
-      let reqNameNormalized = requestedName.toString().toLowerCase().replace(/[^0-9a-z-]/g, '');
+      let reqNameNormalized = requestedName.toString().toLowerCase().replace(/[^0-9a-z-.]/g, '');
 
       // make sure the client is requesting a valid subdomain
       if (reqNameNormalized.length === 0 || !isValidDomain(`${reqNameNormalized}.example.com`)) {
