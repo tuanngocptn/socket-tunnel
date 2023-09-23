@@ -93,7 +93,9 @@ module.exports = (options) => {
       // 2. my.super.example.com = my.super
       // 3. If we are running the tunnel server on a subdomain, we must strip it from the provided hostname
       if (options.subdomain) {
-        subdomain = subdomain.replace(`.${options.subdomain}`, '');
+        // https://github.com/ericbarch/socket-tunnel/issues/11
+        // subdomain = subdomain.replace(`.${options.subdomain}`, '');
+        subdomain = options.subdomain;
       }
 
       let subdomainSocket = socketsBySubdomain[subdomain];
