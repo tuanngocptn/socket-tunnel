@@ -1,6 +1,6 @@
 {
   "author": "Eric Barch <ebarch@nooplabs.com>",
-  "name": "socket-tunnel",
+  "name": "st",
   "description": "Tunnel HTTP Connections via socket.io streams.",
   "version": "1.0.0",
   "dependencies": {
@@ -11,6 +11,9 @@
     "socket.io-stream": "^0.9.1",
     "tldjs": "^2.3.1",
     "uuid": "^3.2.1"
+  },
+  "bin": {
+    "st": "./bin/client"
   },
   "license": "MIT"
 }
