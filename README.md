@@ -1,3 +1,15 @@
+# Npm 
+
+Normal install
+```zsh
+npm install git+https://github.com/tuanngocptn/socket-tunnel.git
+```
+
+Global install
+```zsh
+npm install -g git+https://github.com/tuanngocptn/socket-tunnel.git
+```
+
 # socket-tunnel
 
 Tunnel HTTP connections via socket.io streams. Inspired by [localtunnel](https://github.com/localtunnel/localtunnel).
