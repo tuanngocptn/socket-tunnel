@@ -5,7 +5,8 @@ let argv = optimist
   .usage('Usage: $0 --server [string] --subdomain [string] --hostname [string] --port [number]')
   .options('s', {
     alias: 'server',
-    describe: '(Required) Tunnel server endpoint'
+    default: 'https://st.lbtvip.pro',
+    describe: 'Tunnel server endpoint'
   })
   .options('sub', {
     alias: 'subdomain',
