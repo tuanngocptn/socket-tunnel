@@ -14,13 +14,24 @@ npm install -g git+https://github.com/tuanngocptn/socket-tunnel.git
 
 # How to use
 
-### short way
+### Short way (with normal install)
+
+```sh
+npx st --sub xxx.st -p 3000 # https://xxx.st.lbtvip.pro
+```
+### Short way (with global install)
 
 ```sh
 st --sub xxx.st -p 3000 # https://xxx.st.lbtvip.pro
 ```
 
-### full script
+### Full script (with normal install)
+
+```sh
+npx st --server https://st.lbtvip.pro --subdomain xxx.st --hostname 127.0.0.1 --port 3000 # https://xxx.st.lbtvip.pro
+```
+
+### Full script (with global install)
 
 ```sh
 st --server https://st.lbtvip.pro --subdomain xxx.st --hostname 127.0.0.1 --port 3000 # https://xxx.st.lbtvip.pro
