@@ -3,11 +3,12 @@ const optimist = require('optimist');
 
 let argv = optimist
   .usage('Usage: $0 --server [string] --subdomain [string] --hostname [string] --port [number]')
-  .options('s', {
+  .options('se', {
     alias: 'server',
-    describe: '(Required) Tunnel server endpoint'
+    default: 'https://nport.link',
+    describe: 'Tunnel server endpoint'
   })
-  .options('sub', {
+  .options('s', {
     alias: 'subdomain',
     describe: '(Required) Public URL the tunnel server is forwarding to us'
   })

@@ -1,6 +1,6 @@
 {
-  "author": "Eric Barch <ebarch@nooplabs.com>",
-  "name": "socket-tunnel",
+  "author": "Nick Pham <nickpham@nooplabs.com>, source from socket-tunnel (Eric Barch <ebarch@nooplabs.com>)",
+  "name": "nport",
   "description": "Tunnel HTTP Connections via socket.io streams.",
   "version": "1.0.0",
   "dependencies": {
@@ -13,7 +13,7 @@
     "uuid": "^3.2.1"
   },
   "bin": {
-    "socket-tunnel": "./bin/client"
+    "nport": "./bin/client"
   },
   "license": "MIT"
 }
