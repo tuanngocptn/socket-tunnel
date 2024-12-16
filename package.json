@@ -2,7 +2,7 @@
   "author": "Nick Pham <nickpham@nooplabs.com>, source from socket-tunnel (Eric Barch <ebarch@nooplabs.com>)",
   "name": "nport",
   "description": "Tunnel HTTP Connections via socket.io streams.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "is-valid-domain": "0.0.5",
     "optimist": "^0.6.1",
