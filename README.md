@@ -1,3 +1,12 @@
+# DEPRECATED
+
+⚠️ **This repository is deprecated.** 
+
+Please use [nport](https://github.com/tuanngocptn/nport) instead. It's the newer version with improved features and better stability.
+
+---
+
+
 # Npm
 
 ## Normal install
