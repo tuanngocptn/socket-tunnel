@@ -20,6 +20,7 @@ module.exports = (options) => {
           reject(err);
         } else {
           console.log(new Date() + ': registered with server successfully');
+          console.log(new Date() + ': your domain is: https://' + options['subdomain'] + '.nport.link');
 
           // clean and concat requested url
           let url;
